@@ -3,14 +3,14 @@ import { Header } from '../components/header/Header'
 import { Nav } from '../components/nav/Nav'
 import { MainCatalog } from '../components/main-catalog/MainCatalog'
 
-export const Headphones = ({ products, totalSumInBasket, productCount }) => {
+export const Headphones = ({ products, totalSumInBasket, productCount, fetchProductsInBasket }) => {
     const filteredArray = products.filter(item => item.category === "Навушники")
 
     return (
         <div>
             <Header totalSumInBasket={totalSumInBasket} productCount={productCount}/>
             <Nav/>
-            <MainCatalog products={filteredArray}/>
+            <MainCatalog products={filteredArray} fetchProductsInBasket={fetchProductsInBasket}/>
         </div>
     )
 }

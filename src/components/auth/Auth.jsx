@@ -46,7 +46,7 @@ function Auth({setUserData}) {
                     ) : (
                         <p>
                             Немає акаунту?{' '}
-                            <button onClick={() => setIsRegistering(true)}>Раєстрація</button>
+                            <button onClick={() => setIsRegistering(true)}>Реєстрація</button>
                         </p>
                     )}
                 </div>

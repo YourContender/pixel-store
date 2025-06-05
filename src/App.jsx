@@ -119,6 +119,7 @@ export default function App() {
                         products={products}
                         totalSumInBasket={totalSumInBasket}
                         productCount={productCount}
+                        fetchProductsInBasket={fetchProductsInBasket}
                     />}
                 />
                 <Route 
@@ -128,6 +129,7 @@ export default function App() {
                         products={products}
                         totalSumInBasket={totalSumInBasket}
                         productCount={productCount}
+                        fetchProductsInBasket={fetchProductsInBasket}
                     />}
                 />
                 <Route 
@@ -137,6 +139,7 @@ export default function App() {
                         products={products}
                         totalSumInBasket={totalSumInBasket}
                         productCount={productCount}
+                        fetchProductsInBasket={fetchProductsInBasket}
                     />}
                 />
                 <Route 
@@ -146,6 +149,7 @@ export default function App() {
                         products={products}
                         totalSumInBasket={totalSumInBasket}
                         productCount={productCount}
+                        fetchProductsInBasket={fetchProductsInBasket}
                     />}
                 />
                 <Route 
@@ -155,6 +159,7 @@ export default function App() {
                         products={products}
                         totalSumInBasket={totalSumInBasket}
                         productCount={productCount}
+                        fetchProductsInBasket={fetchProductsInBasket}
                     />}
                 />
             </Routes>
