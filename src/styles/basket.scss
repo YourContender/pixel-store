@@ -1,0 +1,153 @@
+.basket {
+    width: 100%;
+    &_empty {
+        font-family: "Montserrat", sans-serif;
+        padding-left: 20px;
+    }
+    &_container {
+        width: 1200px;
+        margin: 0 auto;
+        margin-top: 40px;
+        &-subtitles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color:#d3d3d354;
+            border-radius: 10px;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 40px;
+            button {
+                width: 250px;
+                height: 40px;
+                border-radius: 12px;
+                background-color: #df960f;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: #e7e5e5;
+                font-family: "Montserrat", serif;
+                cursor: pointer;
+                &:hover {
+                    background: none;
+                    color: #df960f;
+                    font-weight: 700;
+                    border: 2px solid #df960f;
+                }
+            }
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #d3d3d3;
+            padding: 10px 20px;
+            font-family: "Montserrat", sans-serif;
+            &-image {
+                width: 150px;
+                object-fit: contain; 
+            }
+            &-name {
+                width: 190px;
+                font-weight: 700;
+            }
+            &-category {
+                width: 190px;
+            }
+            &-price {
+                width: 190px;
+            }
+            &-edit, &-delete {
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 7px;
+                border: none;
+                outline: none;
+                font-family: "Montserrat", sans-serif;
+                cursor: pointer;
+            }
+            &-edit {
+                background-color: rgb(72, 189, 189);
+                color: #fff;
+                &:hover {
+                    background: none;
+                    color: rgb(72, 189, 189);
+                    border: 1px solid rgb(72, 189, 189);
+                }
+            }
+            &-delete {
+                background-color: rgb(226, 61, 55);
+                color: #fff;
+                &:hover {
+                    background: none;
+                    color: rgb(226, 61, 55);
+                    border: 1px solid rgb(226, 61, 55);
+                }
+            }
+        }
+    }
+    &_stat {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+        background-color:#d3d3d354;
+        margin-bottom: 40px;
+        span {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}
+
+.order-form {
+    font-family: "Montserrat", sans-serif;
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 24px;
+    }
+  
+    &__group {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+        }
+    
+        input,
+        textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+    }
+  
+    &__submit {
+        padding: 0.7rem 1.5rem;
+        font-size: 16px;
+        background-color: #1e88e5;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        &:hover {
+            background-color: #1565c0;
+        }
+    }
+}
+  

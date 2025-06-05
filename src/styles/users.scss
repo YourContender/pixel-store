@@ -1,0 +1,25 @@
+.add-product-btn {
+    text-align: center;
+    width: 190px;
+    margin: 20px 0;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #df960f;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #e7e5e5;
+    font-family: "Montserrat", serif;
+    cursor: pointer;
+    &:hover {
+        background: none;
+        color: #df960f;
+        font-weight: 700;
+        border: 2px solid #df960f;
+    }
+}
+
+.users_container {
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.nav {
+    background-color: #141414;
+    height: 80px;
+    &_container {
+        width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        &-list {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-item {
+                color: #fff;
+                font-family: "Montserrat", serif;
+                font-size: 20px;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    color: #df960f;
+                }
+            }
+        }
+    }
+}

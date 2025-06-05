@@ -1,0 +1,59 @@
+.list {
+    width: 100%;
+    &_container {
+        width: 1200px;
+        margin: 0 auto;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            border: 1px solid #d3d3d3;
+            padding: 10px 20px;
+            font-family: "Montserrat", sans-serif;
+            &-image {
+                width: 150px;
+                object-fit: contain;
+            }
+            &-name {
+                width: 190px;
+                font-weight: 700;
+            }
+            &-category {
+                width: 190px;
+            }
+            &-price {
+                width: 190px;
+            }
+            &-edit, &-delete {
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 7px;
+                border: none;
+                outline: none;
+                font-family: "Montserrat", sans-serif;
+                cursor: pointer;
+            }
+            &-edit {
+                background-color: rgb(72, 189, 189);
+                color: #fff;
+                &:hover {
+                    background: none;
+                    color: rgb(72, 189, 189);
+                    border: 1px solid rgb(72, 189, 189);
+                }
+            }
+            &-delete {
+                background-color: rgb(226, 61, 55);
+                color: #fff;
+                &:hover {
+                    background: none;
+                    color: rgb(226, 61, 55);
+                    border: 1px solid rgb(226, 61, 55);
+                }
+            }
+
+        }
+        
+    }
+}
