@@ -43,13 +43,13 @@ export default function AddProduct({ onAdd, productToEdit }) {
         const productData = { name, price, image: imageUrl, category };
 
         if (productToEdit) {
-            await fetch(`https://6840231f5b39a8039a56eeae.mockapi.io/store/${productToEdit.id}`, {
+            await fetch(`https://685149bf8612b47a2c096ac0.mockapi.io/store/${productToEdit.id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(productData),
             });
         } else {
-            await fetch('https://6840231f5b39a8039a56eeae.mockapi.io/store', {
+            await fetch('https://685149bf8612b47a2c096ac0.mockapi.io/store', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(productData),

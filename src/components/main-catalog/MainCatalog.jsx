@@ -15,7 +15,7 @@ export const MainCatalog = ({fetchProductsInBasket, products}) => {
     }
 
     const sendOrderProduct = async (item) => {
-        await fetch('https://6840231f5b39a8039a56eeae.mockapi.io/reg', {
+        await fetch('https://685149bf8612b47a2c096ac0.mockapi.io/basket', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(item),

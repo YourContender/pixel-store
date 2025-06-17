@@ -23,7 +23,6 @@ export const UserBasket = ({
       
     const handleOrderSubmit = (e) => {
         e.preventDefault();
-        console.log('Дані замовлення:', orderData);
         setShowModalOrder(false);
         alert("Замовлення на опрацюванні")
     };

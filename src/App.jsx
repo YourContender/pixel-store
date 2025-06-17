@@ -19,13 +19,13 @@ export default function App() {
 
 
     const fetchProducts = async () => {
-        const res = await fetch('https://6840231f5b39a8039a56eeae.mockapi.io/store');
+        const res = await fetch('https://685149bf8612b47a2c096ac0.mockapi.io/store');
         const data = await res.json();
         setProducts(data);
     };
 
     const fetchProductsInBasket = async () => {
-        const res = await fetch('https://6840231f5b39a8039a56eeae.mockapi.io/reg');
+        const res = await fetch('https://685149bf8612b47a2c096ac0.mockapi.io/basket');
         const data = await res.json();
         setProductsBasket(data);
     };
@@ -55,14 +55,14 @@ export default function App() {
     };
 
     const handleDelete = async (id) => {
-        await fetch(`https://6840231f5b39a8039a56eeae.mockapi.io/store/${id}`, {
+        await fetch(`https://685149bf8612b47a2c096ac0.mockapi.io/store/${id}`, {
         method: 'DELETE',
         });
         fetchProducts();
     };
 
     const handleDeleteBasket = async (id) => {
-        await fetch(`https://6840231f5b39a8039a56eeae.mockapi.io/reg/${id}`, {
+        await fetch(`https://685149bf8612b47a2c096ac0.mockapi.io/basket/${id}`, {
         method: 'DELETE',
         });
         fetchProducts();

@@ -13,11 +13,9 @@ export const Header = ({ totalSumInBasket, productCount }) => {
             <div className="header_actions">
                 <div className="header_actions-tel">
                     <span className="header_actions-tel-number">099-999-99-99</span>
-                    {/* <span className="header_actions-tel-message">Зворотній виклик</span> */}
                 </div>
                 <Link to="/user" className="header_actions-user">
                     <FaRegUser />
-                    {/* <span className="header_actions-user-reg">Кабінет</span> */}
                 </Link>
                 <Link to="/basket" className="header_actions-basket">
                     <SlBasket />
